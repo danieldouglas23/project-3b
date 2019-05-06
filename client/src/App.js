@@ -17,12 +17,13 @@ function App() {
       <>
       <NavBar></NavBar>
       <Jumbo></Jumbo>
-      <Footer></Footer>
 
       <Switch >
         <Route exact path="/Search" component={Search}/>
 
       </Switch>
+      <Footer></Footer>
+
       </>
     </Router>
 
