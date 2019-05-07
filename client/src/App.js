@@ -1,4 +1,12 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Navbar, Button, Nav, Form, FormControl, NavDropdown } from "react-bootstrap";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import NavBar from "./components/NavBar/index";
+import Jumbo from "./components/Jumbotron";
+import Footer from "./components/Footer";
+import Search from "./pages/Search";
+
 import {
   ReactiveBase,
   CategorySearch,
@@ -17,6 +25,28 @@ class App extends Component {
     };
     return result;
   }
+
+
+
+
+
+
+// function App() {
+//   return (
+//     <Router>
+//       <>
+//       <NavBar></NavBar>
+//       <Jumbo></Jumbo>
+
+//       <Switch >
+//         <Route exact path="/Search" component={Search}/>
+
+//       </Switch>
+//       <Footer></Footer>
+
+//       </>
+//     </Router>
+
 
   render() {
     return (
