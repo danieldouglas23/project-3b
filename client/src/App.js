@@ -9,7 +9,7 @@ import {
 class App extends Component {
   onData(res) {
     const result = {
-      image: "https://www.enterprise.com/content/dam/global-vehicle-images/cars/FORD_FOCU_2012-1.png",
+      image: "https://previews.123rf.com/images/valentint/valentint1704/valentint170400806/75401609-search-for-job-icon-search-for-job-website-button-on-white-background-.jpg",
       title: res.name,
       rating: res.rating,
       desc: res.brand,
@@ -91,4 +91,3 @@ class App extends Component {
   }
 
   export default App;
-

@@ -4,7 +4,7 @@ import './index.css';
 import Routes from '../src/Routes';
 
 import registerServiceWorker from './registerServiceWorker';
-import '@appbaseio/reactivesearch/dist/css/style.min.css';
+// import '@appbaseio/reactivesearch/dist/css/style.min.css';
 
 
 
