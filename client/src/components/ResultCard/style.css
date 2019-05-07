@@ -1,0 +1,28 @@
+#card-list {
+    list-style: none;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 1048px;
+    margin-left: 30px;
+}
+
+#left-body-column {
+    width: 15%;
+}
+
+#right-body-column {
+    width: 85%;
+}
+
+#left-column {
+    width: 80%;
+}
+
+#right-column {
+    width: 20%;
+}
+
+#card-h4 {
+    margin-left: 0px;
+}
