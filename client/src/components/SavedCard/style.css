@@ -1,4 +1,4 @@
-#card-list {
+#card-list-saved {
     list-style: none;
     border: 1px;
     border-color: black;
@@ -7,22 +7,22 @@
     margin-left: 145px;
 }
 
-#left-body-column {
+#left-body-column-saved {
     width: 15%;
 }
 
-#right-body-column {
+#right-body-column-saved {
     width: 85%;
 }
 
-#left-column {
+#left-column-saved{
     width: 80%;
 }
 
-#right-column {
+#right-column-saved {
     width: 20%;
 }
 
-#card-h4 {
+#card-h4-saved {
     margin-left: 0px;
 }
