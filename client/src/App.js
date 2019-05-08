@@ -12,6 +12,7 @@ import API from "./utils/API";
 
 
 
+
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
         <NavBar></NavBar>
 
         <Switch >
+          
           <Route exact path="/" component={Search} />
           <Route exact path="/Search" component={Search} />
           <Route exact path="/Detail" component={Detail} />
@@ -33,3 +35,4 @@ function App() {
   export default App;
 
 
+  
