@@ -3,9 +3,9 @@
     border: 1px;
     border-color: black;
     border-style: solid;
-
     width: 1048px;
-    margin-left: 145px;
+    margin-left: 75px;
+    margin-bottom: 10px;
 }
 
 #left-body-column {

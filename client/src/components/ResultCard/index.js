@@ -26,7 +26,7 @@ const ResultCard = (props) => {
                         </div>
 
 
-                        <div className="card-body">
+                        {/* <div className="card-body">
                             <div className="row">
                                 <div className="column" id="left-body-column" >
                                     
@@ -36,7 +36,7 @@ const ResultCard = (props) => {
                                     <p></p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                     </li>
                     

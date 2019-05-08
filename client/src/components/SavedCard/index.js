@@ -26,7 +26,7 @@ const SavedCard = (props) => {
                         </div>
 
 
-                        <div className="card-body">
+                        {/* <div className="card-body">
                             <div className="row">
                                 <div className="column" id="left-body-column-saved" >
                                     
@@ -36,7 +36,7 @@ const SavedCard = (props) => {
                                     <p></p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                     </li>
                     
