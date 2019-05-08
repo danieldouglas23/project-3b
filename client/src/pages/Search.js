@@ -4,34 +4,24 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import NewForm from "../components/NewForm";
 import ResultCard from "../components/ResultCard";
+import "./styleSearch.css";
 
 class Search extends Component {
   state = {
-    jobData: [],
-    searchCategory: "",
-    searchJobLevel: "",
-    searchLocation: ""
+    jokeData: []
   }
 
-  handleInputChange = event => {
-    // this.setState({ searchCategory: event.target.value });
-    // this.setState({ searchJobLevel: event.target.value });
-    // this.setState({ searchLocation: event.target.value });
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value
-    });
-  }
+  // handleInputChange = event => {
+  //   const { name, value } = event.target;
+  //   this.setState({
+  //     [name]: value
+  //   });
+  // }
 
   handleFormSubmit = event => {
-    console.log("Hello")
     event.preventDefault();
-    API.searchJobs()
+    API.searchJokes()
       .then(res => {
-        // console.log(res.data.results[0].refs.landing_page)
-        // console.log(res.data.results[0].name)
-        // console.log(res.data.results[0].locations[0].name)
-        console.log(res.data);
         if (res.data) {
           // store response in a array
           let results = res.data
@@ -41,20 +31,30 @@ class Search extends Component {
                   key: result.id,
                   id: result.id,
                   setup: result.setup,
-                  punchline: result.punchline,
-                  // location: result.locations[0].name
-                  // description: result.contents
+                  punchline: result.punchline
               }
               return result;
           })
-          // reset the sate of the empty books array to the new arrays of objects with properties geting back from the response
-          this.setState({ jobData: results });
-          // this.setState({ searchedBook: "" });
+          this.setState({ jokeData: results });
       }
        
       })
       .catch(err => console.log(err));
   }
+
+  handleSaveButton = event => {
+    event.preventDefault();
+    console.log(this.state.jokeData);
+    let savedJokes = this.state.jokeData.filter(joke => joke.id.toString() === event.target.id)
+    console.log(savedJokes);
+    console.log(savedJokes[0]);
+    savedJokes = savedJokes[0];
+    console.log(savedJokes);
+    console.log(event.target.id);
+    API.saveJoke(savedJokes)
+        .then(alert("Your joke is saved!"))
+        .catch(err => console.log(err))
+}
   
 
   render() {
@@ -66,8 +66,8 @@ class Search extends Component {
         </NewForm>
 
         <div id="card-container">
-          <h4>Results</h4>
-          <ResultCard jobData={this.state.jobData}/>
+          <h4>Jokes</h4>
+          <ResultCard jokeData={this.state.jokeData} onClick={this.handleSaveButton}/>
         </div>
 
 

@@ -1,4 +1,4 @@
 module.exports = {
-    Job: require("./job")
+    Joke: require("./joke")
   };
   
