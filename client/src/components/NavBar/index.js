@@ -5,12 +5,13 @@ import { Navbar, Button, Nav, Form, FormControl, NavDropdown } from "react-boots
 function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/Home">Mile High Jokester</Navbar.Brand>
+  <Navbar.Brand href="/Search">Mile High Jokester</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="/Search">Home</Nav.Link>
       <Nav.Link href="/Search">Jokes</Nav.Link>
+      <Nav.Link href="/Detail">Saved Jokes</Nav.Link>
+
       {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

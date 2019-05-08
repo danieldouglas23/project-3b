@@ -1,5 +1,6 @@
 h1 {
     margin-top: 40px;
+    margin-right: 50px;
     text-align: center;
 }
 
@@ -14,16 +15,17 @@ h6 {
 }
 
 #book-form {
+
     height: 190px;
     border: 1px;
     border-color: black;
     border-style: solid;
-    background-color: #e9ecef;
+    background-color: #2196f3!important;
     margin-bottom: 32px;
 }
 
 #submit-button {
-    margin-left: 550px;
+    margin-left: 500px;
     text-align: center;
     
 }
