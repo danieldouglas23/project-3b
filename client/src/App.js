@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Navbar, Button, Nav, Form, FormControl, NavDropdown } from "react-bootstrap";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+// import { Navbar, Button, Nav, Form, FormControl, NavDropdown } from "react-bootstrap";
+// import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import NavBar from "./components/NavBar/index";
-import Jumbo from "./components/Jumbotron";
 import Footer from "./components/Footer";
 import Search from "./pages/Search";
-
-
-
+import API from "./utils/API";
 
 
 
@@ -18,17 +15,17 @@ function App() {
   return (
     <Router>
       <>
-      <NavBar></NavBar>
-      <Jumbo></Jumbo>
+        <NavBar></NavBar>
 
-      <Switch >
-        <Route exact path="/Search" component={Search}/>
+        <Switch >
+          <Route exact path="/" component={Search} />
+          <Route exact path="/Search" component={Search} />
 
-      </Switch>
-      <Footer></Footer>
+        </Switch>
+        <Footer></Footer>
 
       </>
     </Router>
+  )}
 
 
-  
