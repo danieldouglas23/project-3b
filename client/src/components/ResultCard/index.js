@@ -19,14 +19,13 @@ const ResultCard = (props) => {
                                     <div className="column" id="right-column">
 
                                         <SaveBtn  onClick={props.onClick} id={jokeData.id}/>
-                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
 
 
-                        <div className="card-body">
+                        {/* <div className="card-body">
                             <div className="row">
                                 <div className="column" id="left-body-column" >
                                     
@@ -36,7 +35,7 @@ const ResultCard = (props) => {
                                     <p></p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                     </li>
                     
