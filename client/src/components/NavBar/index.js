@@ -5,12 +5,12 @@ import { Navbar, Button, Nav, Form, FormControl, NavDropdown } from "react-boots
 function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/Home">Mile High Jobs</Navbar.Brand>
+  <Navbar.Brand href="/Home">Mile High Jokester</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="/Home">Home</Nav.Link>
-      <Nav.Link href="/Search">Saved Jobs</Nav.Link>
+      <Nav.Link href="/Search">Home</Nav.Link>
+      <Nav.Link href="/Search">Jokes</Nav.Link>
       {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -20,12 +20,11 @@ function NavBar() {
       </NavDropdown> */}
     </Nav>
     <Form inline>
-      <FormControl type="text" placeholder="City" className="mr-sm-2" />
-      <FormControl type="text" placeholder="Job Level" className="mr-sm-2" />
-      <FormControl type="text" placeholder="Category" className="mr-sm-2" />
+      <FormControl type="text" placeholder="User ID" className="mr-sm-2" />
+      <FormControl type="text" placeholder="Password" className="mr-sm-2" />
 
 
-      <Button variant="outline-success">Search</Button>
+      <Button variant="outline-success">Login</Button>
     </Form>
   </Navbar.Collapse>
 </Navbar>
