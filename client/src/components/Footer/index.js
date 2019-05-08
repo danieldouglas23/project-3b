@@ -28,12 +28,13 @@ const Footer = () => {
                 <a href="/Home">Legal</a>
               </li>
             </ul>
+            
           </MDBCol>
         </MDBRow>
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> Jobs </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com">Mile High Jokester </a>
         </MDBContainer>
       </div>
     </MDBFooter>
