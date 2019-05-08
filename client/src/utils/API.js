@@ -1,26 +1,26 @@
 import axios from "axios";
 
 export default {
-    searchJobs: function () {
+    searchJokes: function () {
         return axios.get("https://official-joke-api.appspot.com/random_ten");
     },
-    // Gets all Jobs
-    getJobs: function () {
-        return axios.get("/api/Jobs");
+    // Gets all Jokes
+    getJokes: function () {
+        return axios.get("/api/jokes");
     },
 
-    // Gets the Job with the given id
-    getJob: function (id) {
-        return axios.get("/api/Jobs/" + id);
+    // Gets the Joke with the given id
+    getJoke: function (id) {
+        return axios.get("/api/jokes/" + id);
     },
 
-    // Saves a Job to the database
-    saveJob: function (savedJobs) {
-        return axios.post("/api/Jobs", savedJobs);
+    // Saves a Joke to the database
+    saveJoke: function (savedJokes) {
+        return axios.post("/api/jokes", savedJokes);
     },
 
-    // Deletes the Job with the given id
-    deleteJob: function (id) {
-        return axios.delete("/api/Jobs/" + id);
+    // Deletes the Joke with the given id
+    deleteJoke: function (id) {
+        return axios.delete("/api/jokes/" + id);
     }
 };
