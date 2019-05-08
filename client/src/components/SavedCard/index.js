@@ -1,24 +1,24 @@
 import React from "react";
 import "./style.css";
-import SaveBtn from "../SaveBtn";
+import DeleteBtn from "../DeleteBtn";
 
-const ResultCard = (props) => {
+const SavedCard = (props) => {
     return (
         <>
-            {props.jokeData.map(jokeData => {
+            {props.savedJokes.map(savedJokes => {
                 return (
-                    <li id="card-list"  key={jokeData.id}>
+                    <li id="card-list-saved"  key={savedJokes._id}>
                         <div className="card" >
                             <div className="card-header">
 
                                 <div className="row">
-                                    <div className="column" id="left-column">
-                                        <h4 id="card-h4">Setup: {jokeData.setup}</h4> <br />
-                                        <h5>Punchline: {jokeData.punchline} </h5>
+                                    <div className="column" id="left-column-saved">
+                                        <h4 id="card-h4-saved">Setup: {savedJokes.setup}</h4> <br />
+                                        <h5>Punchline:  {savedJokes.punchline} </h5>
                                     </div>
-                                    <div className="column" id="right-column">
+                                    <div className="column" id="right-column-saved">
 
-                                        <SaveBtn  onClick={props.onClick} id={jokeData.id}/>
+                                        <DeleteBtn  onClick={props.onClick} id={savedJokes._id}/>
                                         
                                     </div>
                                 </div>
@@ -28,11 +28,11 @@ const ResultCard = (props) => {
 
                         <div className="card-body">
                             <div className="row">
-                                <div className="column" id="left-body-column" >
+                                <div className="column" id="left-body-column-saved" >
                                     
                                    
                                 </div>
-                                <div className="column" id="right-body-column" >
+                                <div className="column" id="right-body-column-saved" >
                                     <p></p>
                                 </div>
                             </div>
@@ -46,4 +46,4 @@ const ResultCard = (props) => {
     )
 }
 
-export default ResultCard;
+export default SavedCard;

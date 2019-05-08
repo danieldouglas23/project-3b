@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/index";
 import Footer from "./components/Footer";
 import Search from "./pages/Search";
+import Detail from "./pages/Detail";
 import API from "./utils/API";
 
 
@@ -20,6 +21,7 @@ function App() {
         <Switch >
           <Route exact path="/" component={Search} />
           <Route exact path="/Search" component={Search} />
+          <Route exact path="/Detail" component={Detail} />
 
         </Switch>
         <Footer></Footer>
