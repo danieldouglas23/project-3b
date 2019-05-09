@@ -17,7 +17,6 @@ const ResultCard = (props) => {
                                         <h5>Punchline: {jokeData.punchline} </h5>
                                     </div>
                                     <div className="column" id="right-column">
-
                                         <SaveBtn  onClick={props.onClick} id={jokeData.id}/>
                                     </div>
                                 </div>
