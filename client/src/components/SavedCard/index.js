@@ -19,7 +19,7 @@ const SavedCard = (props) => {
                                     </div>
                                     <div className="column" id="right-column-saved">
 
-                                        <DeleteBtn  onClick={props.onClick} id={savedJokes._id}/>
+                                        <DeleteBtn  onClick={props.onClickSave} id={savedJokes._id}/>
                                         
 
                                        

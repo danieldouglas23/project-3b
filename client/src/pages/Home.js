@@ -1,18 +1,22 @@
 import React from "react";
+import styled from "styled-components";
 
-
-
-
-
-class home extends React.Component {
+const Generator =styled.div`
+  img{
+     background-color:black;
+     align:center;
+  }
+  
+`; 
+class Home extends React.Component {
     render() {
        return (
-          <div>
+          <Generator>
              
          <img src = "https://cdn.cnn.com/cnn/interactive/2016/06/us/dad-joke-generator/media/title.gif" alt="background"/>
-          </div>
+          </Generator>
        )
     }
  }
- export default home;
+ export default Home;
 

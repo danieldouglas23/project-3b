@@ -14,6 +14,7 @@ import Home from "./pages/Home";
 
 
 
+
 function App() {
   return (
     <Router>
@@ -24,6 +25,7 @@ function App() {
 
           
           <Route exact path="/" component={Home} />
+          <Route exact path="/Home" component={Home} />
           <Route exact path="/Search" component={Search} />
           <Route exact path="/Detail" component={Detail} />
 

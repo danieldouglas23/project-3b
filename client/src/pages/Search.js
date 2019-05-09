@@ -71,7 +71,7 @@ class Search extends Component {
 
         <div id="card-container">
           <h4>Jokes</h4>
-          <ResultCard jokeData={this.state.jokeData} onClickSave={ this.handleSaveButton} />
+          <ResultCard jokeData={this.state.jokeData} onClick={ this.handleSaveButton} />
             
             
         </div>
