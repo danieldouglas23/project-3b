@@ -4,32 +4,19 @@ import { Navbar, Button, Nav, Form, FormControl, NavDropdown } from "react-boots
 
 function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/Search">Mile High Jokester</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="/Search">Jokes</Nav.Link>
-      <Nav.Link href="/Detail">Saved Jokes</Nav.Link>
-
-      {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown> */}
-    </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="User ID" className="mr-sm-2" />
-      <FormControl type="text" placeholder="Password" className="mr-sm-2" />
-
-
-      <Button variant="outline-success">Login</Button>
-    </Form>
-  </Navbar.Collapse>
-</Navbar>
+    <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <a className="navbar-brand" href="#"><i className="fas fa-laugh-squint text-warning"></i> Mile High Jokester <i className="fas fa-laugh-squint text-warning"></i>
+        </a>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" href="/">Generate</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/Detail">Saved</a>
+          </li>
+        </ul>
+      </nav>
   )
-}
+};
 
 export default NavBar;
