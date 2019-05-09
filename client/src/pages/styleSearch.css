@@ -1,5 +1,6 @@
 #card-container {
     border: 1px;
+    border-radius: 10px;
     border-color: black;
     border-style: solid;
     background-color: #e9ecef;
