@@ -1,6 +1,8 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./style.css";
 import SaveBtn from "../SaveBtn";
+import Saved from "../Saved";
 
 const ResultCard = (props) => {
     return (
@@ -18,7 +20,12 @@ const ResultCard = (props) => {
                                     </div>
                                     <div className="column" id="right-column">
 
-                                        <SaveBtn  onClick={props.onClick} id={jokeData.id}/>
+                                         
+                                        <SaveBtn onClick={props.onClickSave} id={jokeData.id}/>
+                                        <Saved  />
+
+                                        
+
                                     </div>
                                 </div>
                             </div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom";
 // import { Container } from "react-bootstrap";
 // import { Form, Row, Col } from 'react-bootstrap';
 import API from "../utils/API";
@@ -57,6 +58,7 @@ class Search extends Component {
         .then(alert("Your joke is saved!"))
         .catch(err => console.log(err))
 }
+
   
 
   render() {
@@ -69,7 +71,9 @@ class Search extends Component {
 
         <div id="card-container">
           <h4>Jokes</h4>
-          <ResultCard jokeData={this.state.jokeData} onClick={this.handleSaveButton}/>
+          <ResultCard jokeData={this.state.jokeData} onClickSave={ this.handleSaveButton} />
+            
+            
         </div>
 
         
