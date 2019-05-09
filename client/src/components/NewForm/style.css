@@ -1,12 +1,15 @@
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    color: black;
+}
 h1 {
     margin-top: 40px;
     margin-right: 50px;
     text-align: center;
-
 }
-
 #book-form {
-
     height: 190px;
     border: 1px;
     border-color: black;
@@ -15,8 +18,7 @@ h1 {
     margin-bottom: 32px;
     
 }
-
 #submit-button {
-    margin-left: 530px;
+    text-align: center;
     
 }
