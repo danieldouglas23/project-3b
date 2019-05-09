@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import DeleteBtn from "../DeleteBtn";
+// import jokeSaved from "../jokeSaved";
 
 const SavedCard = (props) => {
     return (
@@ -19,6 +20,11 @@ const SavedCard = (props) => {
                                     <div className="column" id="right-column-saved">
 
                                         <DeleteBtn  onClick={props.onClick} id={savedJokes._id}/>
+                                        
+
+                                       
+                                        
+
                                         
                                     </div>
                                 </div>

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 // import { Container } from "react-bootstrap";
 // import { Form, Row, Col } from 'react-bootstrap';
 import API from "../utils/API";
+// import Home from "./pages/Home";
+// import Footer from "../components/Footer";
 import NewForm from "../components/NewForm";
 import ResultCard from "../components/ResultCard";
 import "./styleSearch.css";
@@ -69,6 +71,8 @@ class Search extends Component {
           <h4>Jokes</h4>
           <ResultCard jokeData={this.state.jokeData} onClick={this.handleSaveButton}/>
         </div>
+
+        
 
 
 

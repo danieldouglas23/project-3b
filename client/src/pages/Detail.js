@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import API from "../utils/API";
+// import Home from "./pages/Home";
+// import Footer from "../components/Footer";
 import "./styleSearch.css";
 import SavedCard from "../components/SavedCard";
+
 
 class Detail extends Component {
     state = {
         savedJokes: [],
+        
     }
 
     componentDidMount() {
@@ -26,8 +30,17 @@ class Detail extends Component {
                 <div id="card-container">
                     <h4>Saved Jokes</h4>
                     <SavedCard savedJokes={this.state.savedJokes} onClick={this.handleDeleteButton} />
+                    
+ 
+                    
+
+                    
+
                 </div>
+
+                
             </>
+        
         );
 
     }
