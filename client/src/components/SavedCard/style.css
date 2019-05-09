@@ -1,13 +1,22 @@
 #card-list-saved {
     list-style: none;
-    border: 1px;
+    /* border: 1px;
+    border-radius: 20px;
     border-color: black;
-    border-style: solid;
+    border-style: solid; */
     width: 1048px;
     margin-left: auto;
     margin-right: auto;    
     margin-bottom: 10px;
 
+}
+
+.card {
+    border: 1px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 5px 5px 5px grey;
 }
 
 #left-body-column-saved {

@@ -3,8 +3,8 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const Footer = () => {
     return (
-    <MDBFooter color="blue" className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
+    <MDBFooter color="blue" className="footer-copyright text-center py-3 fixed-bottom">
+      {/* <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
             <h5 className="title">REACT Jokester</h5>
@@ -31,10 +31,10 @@ const Footer = () => {
             
           </MDBCol>
         </MDBRow>
-      </MDBContainer>
+      </MDBContainer> */}
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com">Mile High Jokester </a>
+          &copy; {new Date().getFullYear()} Copyright: Mile High Jokester
         </MDBContainer>
       </div>
     </MDBFooter>
