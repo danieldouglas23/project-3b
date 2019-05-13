@@ -26,6 +26,7 @@ const ResultCard = (props) => {
 
                                         
 
+                                        <SaveBtn  onClick={props.onClick} id={jokeData.id}/>
                                     </div>
                                 </div>
                             </div>

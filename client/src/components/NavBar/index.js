@@ -4,6 +4,7 @@ import { Navbar, Button, Nav, Form, FormControl, NavDropdown } from "react-boots
 
 function NavBar() {
   return (
+    <div>
     <Navbar bg="light" expand="lg">
   <Navbar.Brand href="/Search">Mile High Jokester</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -12,16 +13,6 @@ function NavBar() {
      <Nav.Link href="/home">Home</Nav.Link>
       <Nav.Link href="/Search">Jokes</Nav.Link>
       <Nav.Link href="/Detail">Saved Jokes</Nav.Link>
-      
-
-
-      {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown> */}
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="User ID" className="mr-sm-2" />
@@ -32,7 +23,25 @@ function NavBar() {
     </Form>
   </Navbar.Collapse>
 </Navbar>
+</div>
+  
+
+
+    <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <a className="navbar-brand" href="#"> <i className="fas fa-laugh-squint text-warning"></i> Mile High Jokester <i className="fas fa-laugh-squint text-warning"></i>
+        </a>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" href="/">Generate</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/Detail">Saved</a>
+          </li>
+        </ul>
+      </nav>
+      
+      
   )
-}
+};
 
 export default NavBar;
