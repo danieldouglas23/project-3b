@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Search from "./pages/Search";
 import Detail from "./pages/Detail";
 import API from "./utils/API";
-import Home from "./pages/Home";
 
 
 
@@ -24,8 +23,8 @@ function App() {
         <Switch >
 
           
-          <Route exact path="/" component={Home} />
-          <Route exact path="/Home" component={Home} />
+          <Route exact path="/" component={Search} />
+          
           <Route exact path="/Search" component={Search} />
           <Route exact path="/Detail" component={Detail} />
 

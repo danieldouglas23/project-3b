@@ -21,8 +21,8 @@ const ResultCard = (props) => {
                                     <div className="column" id="right-column">
 
                                          
-                                        <SaveBtn onClick={props.onClickSave} id={jokeData.id}/>
-                                        <Saved  />
+                                        {/* <SaveBtn onClick={props.onClickSave} id={jokeData.id}/> */}
+                                        
 
                                         
 
